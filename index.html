@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header>
+    <h1>Weather Forecast</h1>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Search city">
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- LEFT -->
+    <section class="current">
+      <h2 id="location">---</h2>
+      <p id="date">---</p>
+      <div class="temp" id="temp">--°C</div>
+      <p id="desc">---</p>
+
+      <div class="details">
+        <div>
+          <span>Humidity</span>
+          <strong id="humidity">--%</strong>
+        </div>
+        <div>
+          <span>Wind</span>
+          <strong id="wind">-- km/h</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT -->
+    <section class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div class="days" id="forecast"></div>
+    </section>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
